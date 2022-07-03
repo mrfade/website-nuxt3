@@ -1,42 +1,21 @@
-# Nuxt 3 Minimal Starter
+# website-nuxt3
 
-Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
+<p align="center">
+  <a aria-label="Nuxt logo" href="https://nuxtjs.org">
+    <img src="https://img.shields.io/badge/Built%20with%20Nuxt3-000000.svg?style=flat&logo=Nuxt.js&labelColor=000">
+  </a>
+  <a aria-label="Vercel logo" href="https://vercel.com">
+    <img src="https://img.shields.io/badge/Deployed%20on%20Vercel-000000.svg?style=flat&logo=Vercel&labelColor=000">
+  </a>
+  <a aria-label="Upstash logo" href="https://upstash.com">
+    <img src="https://img.shields.io/badge/Database%20on%20Upstash%20Redis-000000.svg?style=flat&logo=Upstash&labelColor=000">
+  </a>
+</p>
 
-## Setup
+Source code of my personal website.
 
-Make sure to install the dependencies:
+Built with Nuxt3, Typescript and Tailwind. Deployed on Vercel. Database on Upstash Redis.
 
-```bash
-# yarn
-yarn install
+## License
 
-# npm
-npm install
-
-# pnpm
-pnpm install --shamefully-hoist
-```
-
-## Development Server
-
-Start the development server on http://localhost:3000
-
-```bash
-npm run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-npm run build
-```
-
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Checkout the [deployment documentation](https://v3.nuxtjs.org/guide/deploy/presets) for more information.
+MIT License
