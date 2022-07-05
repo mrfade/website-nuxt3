@@ -1,10 +1,10 @@
 <script setup lang="ts">
 useHead({
-  title: 'Enes Solak',
+  title: 'Enes Solak - Full Stack Web Developer',
   meta: [
     {
       name: 'description',
-      content: 'Enes Solak personal website'
+      content: "Hi! I'm Enes Solak, a Full Stack Web Developer from Turkey. I have a passion for Web Development and I love to build things with it."
     }
   ],
   link: [
