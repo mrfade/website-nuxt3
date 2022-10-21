@@ -21,7 +21,7 @@ export default defineEventHandler(async (_event) => {
 
     const _repos: string = JSON.stringify(pinnedRepos)
     await redis.set('pinnedRepos', _repos, {
-      ex: 60 * 10 // 10 minutes
+      ex: 60 * 60 // 1 hours
     })
 
     repos = pinnedRepos
