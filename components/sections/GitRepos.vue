@@ -17,7 +17,7 @@ if (error.value)
 <template>
   <section>
     <Container>
-      <Title title="GitHub Repos" />
+      <SectionTitle title="Pinned GitHub Repos" />
       <Repos>
         <Repo
           v-for="repo in pinnedRepos"
@@ -28,7 +28,7 @@ if (error.value)
           :description="repo.description"
           :color="repo.languageColor"
           :language="repo.language"
-          :stars="repo.stars"
+          :stars="repo.stars?.toString()"
         />
 
         <SkeletonRepo v-if="!pinnedRepos.length" />
@@ -36,6 +36,10 @@ if (error.value)
         <SkeletonRepo v-if="!pinnedRepos.length" />
         <SkeletonRepo v-if="!pinnedRepos.length" />
       </Repos>
+
+      <div class="flex justify-center my-12">
+        <SeeAll to="/repos">See All</SeeAll>
+      </div>
     </Container>
   </section>
 </template>

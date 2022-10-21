@@ -33,7 +33,7 @@ const projects = [
 <template>
   <section>
     <Container>
-      <Title title="Projects" />
+      <SectionTitle title="Projects" />
       <Projects>
         <Project
           v-for="project in projects"

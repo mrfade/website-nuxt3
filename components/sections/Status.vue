@@ -1,7 +1,7 @@
 <template>
   <section>
     <Container>
-      <Title title="Discord Status" />
+      <SectionTitle title="Discord Status" />
 
       <span class="active">Online</span>
 
