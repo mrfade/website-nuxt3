@@ -10,7 +10,7 @@ export default defineEventHandler(async (_event) => {
   const cachePinnedRepos: any[] = await redis.get('pinnedRepos')
 
   if (!cachePinnedRepos) {
-    const pinnedRepos: any[] = await $fetch('https://gh-pinned-repos.egoist.sh/?username=mrfade', {
+    const pinnedRepos: any[] = await $fetch('https://gh-pinned-repos.egoist.dev/?username=mrfade', {
       responseType: 'json'
     })
       .catch((_error: FetchError) => {
