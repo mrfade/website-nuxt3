@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { Ref } from 'vue'
-import { LanyardData } from '~~/@types/lanyard'
+import type { Ref } from 'vue'
+import type { LanyardData } from '~~/@types/lanyard'
 import { useLanyard } from '~~/composables/useLanyard'
 
 const status: Ref<LanyardData> = ref<LanyardData>({
@@ -15,7 +15,7 @@ onMounted(async () => {
     socket: true
   })
 
-  socket.addEventListener('message', ({ data }) => {
+  socket.addEventListener('message', ({ data }: MessageEvent) => {
     const { d: _status } = JSON.parse(data) as { d: LanyardData }
     status.value = _status
   })
@@ -60,7 +60,7 @@ onMounted(async () => {
     </div>
 
     <div
-      v-if="status.listening_to_spotify"
+      v-if="status.listening_to_spotify && status.spotify"
       v-tippy="{ content: 'Listening to Spotify', placement: 'top-start' }"
       class="activity"
     >
@@ -120,6 +120,7 @@ onMounted(async () => {
     color: #fff;
     text-transform: capitalize;
     user-select: none;
+    height: 2rem;
 
     .icon {
       display: inline-block;

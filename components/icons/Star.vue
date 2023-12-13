@@ -3,13 +3,13 @@ export default {
   props: {
     width: {
       type: [Number, String],
-      default: 24,
+      default: 24
     },
     height: {
       type: [Number, String],
-      default: 24,
-    },
-  },
+      default: 24
+    }
+  }
 }
 </script>
 

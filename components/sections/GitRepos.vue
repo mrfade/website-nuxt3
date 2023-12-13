@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { Ref } from 'vue'
-import { PinnedRepo } from '~~/@types/repo'
+import type { Ref } from 'vue'
+import type { PinnedRepo } from '~~/@types/repo'
 import Repos from '~~/components/repos/Repos.vue'
 import Repo from '~~/components/repos/Repo.vue'
 

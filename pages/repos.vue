@@ -17,6 +17,12 @@ if (error.value)
   // eslint-disable-next-line no-console
   console.error(error.value)
 
+const getColor = (language: string | undefined, defaultValue: string): string => {
+  if (!language) return defaultValue
+  const colors = new Map(Object.entries(GithubColors))
+  return colors.get(language) ?? defaultValue
+}
+
 useHead({
   title: 'GitHub Repos'
 })
@@ -34,8 +40,8 @@ useHead({
           :repo="repo.name"
           :link="repo.html_url"
           :description="repo.description ?? ''"
-          :color="(GithubColors[repo.language] ?? '#000')"
-          :language="repo.language"
+          :color="getColor(repo.language, '#000')"
+          :language="repo.language ?? ''"
           :stars="repo.stargazers_count.toString()"
         />
 

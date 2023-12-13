@@ -1,15 +1,15 @@
 import { defineEventHandler } from 'h3'
-import { $fetch, FetchError } from 'ohmyfetch'
+import { $fetch, FetchError } from 'ofetch'
 import { Redis } from '@upstash/redis'
 
 const redis = Redis.fromEnv()
 
-export default defineEventHandler(async (_event) => {
+export default defineEventHandler(async (_event: any) => {
   let repos = []
 
-  const cachePinnedRepos: any[] = await redis.get('pinnedRepos')
+  const cachePinnedRepos: any[] | null = await redis.get('pinnedRepos')
 
-  if (!cachePinnedRepos) {
+  if (cachePinnedRepos === null || cachePinnedRepos.length === 0) {
     const pinnedRepos: any[] = await $fetch('https://gh-pinned-repos.egoist.dev/?username=mrfade', {
       responseType: 'json'
     })
@@ -28,7 +28,7 @@ export default defineEventHandler(async (_event) => {
   }
 
   if (repos.length === 0)
-    repos = cachePinnedRepos
+    repos = cachePinnedRepos as any[]
 
   return repos
 })

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import Loading from 'vue-loading-overlay'
-import 'vue-loading-overlay/dist/vue-loading.css'
+import 'vue-loading-overlay/dist/css/index.css'
 
 import { useLoaderStore } from '~~/stores/loader'
 const loaderStore = useLoaderStore()
@@ -15,6 +15,10 @@ useHead({
     {
       rel: 'shortcut icon',
       href: '/favicon.ico'
+    },
+    {
+      rel: 'canonical',
+      href: 'https://enessolak.com.tr'
     }
   ]
 })
