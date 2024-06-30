@@ -1,0 +1,72 @@
+[
+    {
+        "owner": "ytdl-org",
+        "repo": "youtube-dl",
+        "link": "https://github.com/ytdl-org/youtube-dl",
+        "description": "Command-line program to download videos from YouTube.com and other video sites",
+        "image": "https://opengraph.githubassets.com/1/ytdl-org/youtube-dl",
+        "language": "Python",
+        "languageColor": "#3572A5",
+        "stars": 130,
+        "forks": 9
+    },
+    {
+        "owner": "yt-dlp",
+        "repo": "yt-dlp",
+        "link": "https://github.com/yt-dlp/yt-dlp",
+        "description": "A feature-rich command-line audio/video downloader",
+        "image": "https://opengraph.githubassets.com/1/yt-dlp/yt-dlp",
+        "website": "https://discord.gg/H5MNcFW63r",
+        "language": "Python",
+        "languageColor": "#3572A5",
+        "stars": 75,
+        "forks": 6
+    },
+    {
+        "owner": "mrfade",
+        "repo": "oguyem",
+        "link": "https://github.com/mrfade/oguyem",
+        "description": "OGUYEM is a simple application that displays the menu for OGU's refectory.",
+        "image": "https://opengraph.githubassets.com/1/mrfade/oguyem",
+        "language": "Java",
+        "languageColor": "#b07219",
+        "stars": 2,
+        "forks": 0
+    },
+    {
+        "owner": "mrfade",
+        "repo": "vue-drag-drop-snap",
+        "link": "https://github.com/mrfade/vue-drag-drop-snap",
+        "description": "A dependency-free Vue component, that allows you to drag and drop elements and snap them to specified positions like Discord",
+        "image": "https://opengraph.githubassets.com/1/mrfade/vue-drag-drop-snap",
+        "website": "https://mrfade.github.io/vue-drag-drop-snap/",
+        "language": "Vue",
+        "languageColor": "#41b883",
+        "stars": 1,
+        "forks": 0
+    },
+    {
+        "owner": "mrfade",
+        "repo": "kisitlamavarmi-frontend",
+        "link": "https://github.com/mrfade/kisitlamavarmi-frontend",
+        "description": "Türkiye haritası ile illerin salgın durumunu görsel olarak gösteren bir SPA nuxt.js projesi.",
+        "image": "https://opengraph.githubassets.com/1/mrfade/kisitlamavarmi-frontend",
+        "website": "https://kisitlamavarmi.sunucum.cloud/",
+        "language": "Vue",
+        "languageColor": "#41b883",
+        "stars": 1,
+        "forks": 0
+    },
+    {
+        "owner": "mrfade",
+        "repo": "movie-ticket-frontend",
+        "link": "https://github.com/mrfade/movie-ticket-frontend",
+        "description": "Simple movie ticket booking system built with nuxt3 and tailwindcss.",
+        "image": "https://opengraph.githubassets.com/1/mrfade/movie-ticket-frontend",
+        "website": "https://ticket.solak.dev",
+        "language": "Vue",
+        "languageColor": "#41b883",
+        "stars": 1,
+        "forks": 0
+    }
+]
