@@ -3,14 +3,9 @@ import type { Ref } from 'vue'
 import type { PinnedRepo } from '~~/@types/repo'
 import Repos from '~~/components/repos/Repos.vue'
 import Repo from '~~/components/repos/Repo.vue'
+import repos from '~~/data/pinned-repos.json'
 
-const pinnedRepos: Ref<PinnedRepo[]> = ref<PinnedRepo[]>([])
-const { data, error } = await useFetch<PinnedRepo[]>('/api/pinned-repos')
-if (data.value)
-  pinnedRepos.value = data.value
-
-if (error.value)
-  console.error(error.value)
+const pinnedRepos: Ref<PinnedRepo[]> = ref<PinnedRepo[]>(repos as unknown as PinnedRepo[])
 </script>
 
 <template>
