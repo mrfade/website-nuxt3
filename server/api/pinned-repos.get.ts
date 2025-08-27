@@ -16,6 +16,7 @@ export default defineEventHandler(async (_event: any) => {
     repos = JSON.parse(data)
   } catch (error) {
     // ignore error
+    console.error('Error reading pinned repos file:', error)
   }
 
   // const cachePinnedRepos: any[] | null = await redis.get('pinnedRepos')
