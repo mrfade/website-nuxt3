@@ -14,7 +14,6 @@ if (data.value)
     .sort((a: Repository, b: Repository): number => (a?.pushed_at > b?.pushed_at) ? -1 : 1)
 
 if (error.value)
-  // eslint-disable-next-line no-console
   console.error(error.value)
 
 const getColor = (language: string | undefined, defaultValue: string): string => {

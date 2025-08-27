@@ -7,25 +7,25 @@ const projects = [
     name: 'sunucum.cloud',
     url: 'https://sunucum.cloud',
     status: 'active',
-    description: 'My workspace server running on CentOS 7.'
+    description: 'Personal workspace server on AlmaLinux.'
   },
   {
     name: 'cevir.in',
     url: 'https://cevir.in',
-    status: 'active',
-    description: 'It is a simple video downloader from various sites.'
+    status: 'temporary-inactive',
+    description: 'Simple multi-platform video downloader.'
   },
   {
     name: 'solak.dev',
     url: 'https://solak.dev',
     status: 'active',
-    description: 'Domain that I serve my example projects under.'
+    description: 'Showcase for my example projects.'
   },
   {
     name: 'enes.im',
     url: 'https://enes.im',
     status: 'active',
-    description: 'My link alias service.'
+    description: 'Custom link shortening service.'
   }
 ]
 </script>

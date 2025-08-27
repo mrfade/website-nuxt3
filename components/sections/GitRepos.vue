@@ -10,7 +10,6 @@ if (data.value)
   pinnedRepos.value = data.value
 
 if (error.value)
-  // eslint-disable-next-line no-console
   console.error(error.value)
 </script>
 

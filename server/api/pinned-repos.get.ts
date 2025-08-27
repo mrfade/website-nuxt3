@@ -6,13 +6,13 @@ import { defineEventHandler } from 'h3'
 
 // const redis = Redis.fromEnv()
 
-export default defineEventHandler((_event: any) => {
+export default defineEventHandler(async (_event: any) => {
   let repos = []
 
-  // read from file /data/pinned-repos.json
-  const filePath = path.resolve(process.cwd(), 'data/pinned-repos.json')
+  // read from file /data/pinned-repos.json asynchronously for serverless compatibility
+  const filePath = path.join(process.cwd(), 'data/pinned-repos.json')
   try {
-    const data = fs.readFileSync(filePath, 'utf8')
+    const data = await fs.promises.readFile(filePath, 'utf8')
     repos = JSON.parse(data)
   } catch (error) {
     // ignore error

@@ -3,7 +3,7 @@ useHead({
   meta: [
     {
       name: 'description',
-      content: "Hi! I'm Enes Solak, a Full Stack Web Developer from Turkey. I have a passion for Web Development and I love to build things with it."
+      content: "Hi! I'm Enes Solak, Backend-focused Full Stack Developer from Turkey. I have a passion for Web Development and I love to build things with it."
     }
   ]
 })

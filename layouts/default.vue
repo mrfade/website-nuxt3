@@ -9,7 +9,7 @@ const route = useRoute()
 
 useHead({
   titleTemplate: (titleChunk) => {
-    return titleChunk ? `${titleChunk} - Enes Solak` : 'Enes Solak - Full Stack Web Developer'
+    return titleChunk ? `${titleChunk} - Enes Solak` : 'Enes Solak - Full Stack Developer'
   },
   link: [
     {

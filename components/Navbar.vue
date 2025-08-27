@@ -34,9 +34,3 @@ const links = [
     </Container>
   </nav>
 </template>
-
-<style lang="scss" scoped>
-nav {
-  background-color: darken($bg-color, 2%);
-}
-</style>
